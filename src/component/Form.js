@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { DragdropContext } from "./store/DragdropContext";
+
+
 const Form = () => {
 
   const { boxA, boxB, onDragStart, onDrop } =
@@ -8,9 +10,9 @@ const Form = () => {
     const onDragOver = (e) => {
       e.preventDefault();
     };
-    
+
   return (
-    <div>
+    
       <div className="container">
         <div
           className="box"
@@ -48,7 +50,7 @@ const Form = () => {
           ))}
         </div>
       </div>
-    </div>
+
   );
 };
 
